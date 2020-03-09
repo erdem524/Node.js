@@ -10,5 +10,6 @@ fetch('https://restapiabasicauthe-sandbox.mxapps.io/api/books', {
 })
   .then(res => res.json())
   .then(json => console.log(json))
+  .catch(err => console.error('oooops', err.message))
 
 //  Bonus hint : https://stackabuse.com/encoding-and-decoding-base64-strings-in-node-js/
